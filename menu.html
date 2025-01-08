@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Menu - Taste & Toast</title>
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <div class="announcement-item">
+                <i class="fas fa-gift"></i>
+                <span>Special Holiday Offer: 20% off on all main courses!</span>
+            </div>
+            <div class="announcement-divider"></div>
+            <div class="announcement-item">
+                <i class="fas fa-utensils"></i>
+                <span>Sunday Brunch Buffet: $35 per person</span>
+            </div>
+            <div class="announcement-divider"></div>
+            <div class="announcement-item">
+                <i class="fas fa-music"></i>
+                <span>Live Music Every Friday & Saturday Night</span>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Taste & Toast</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <button class="three-dots-btn" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#notificationModal">
+                                <i class="fas fa-bell mr-2"></i>Notification Preferences
+                            </a>
+                            <a class="dropdown-item" href="contact.html#customer-care">
+                                <i class="fas fa-headset mr-2"></i>24x7 Customer Care
+                            </a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#downloadAppModal">
+                                <i class="fas fa-mobile-alt mr-2"></i>Download App
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header" style="background-image: url('images/menu-1.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p class="lead">Discover our culinary delights</p>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-navigation">
+                <button class="menu-nav-btn active" data-target="starters">Starters</button>
+                <button class="menu-nav-btn" data-target="main-course">Main Course</button>
+                <button class="menu-nav-btn" data-target="desserts">Desserts</button>
+                <button class="menu-nav-btn" data-target="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-category active" id="starters">
+                <h2 class="section-title">Starters</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/menu-2.jpg" alt="Bruschetta" class="img-fluid">
+                            </div>
+                            <div class="menu-item-header">
+                                <h3>Bruschetta</h3>
+                                <span class="price">$12</span>
+                            </div>
+                            <p>Fresh tomatoes, garlic, basil on toasted artisan bread</p>
+                            <span class="badge">Vegetarian</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/menu-3.jpg" alt="Calamari" class="img-fluid">
+                            </div>
+                            <div class="menu-item-header">
+                                <h3>Calamari</h3>
+                                <span class="price">$16</span>
+                            </div>
+                            <p>Crispy fried squid with lemon aioli</p>
+                            <span class="badge">Seafood</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="main-course">
+                <h2 class="section-title">Main Course</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/menu-4.jpg" alt="Grilled Salmon" class="img-fluid">
+                            </div>
+                            <div class="menu-item-header">
+                                <h3>Grilled Salmon</h3>
+                                <span class="price">$28</span>
+                            </div>
+                            <p>Fresh Atlantic salmon with herb butter sauce</p>
+                            <span class="badge">Signature</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/menu-5.jpg" alt="Beef Tenderloin" class="img-fluid">
+                            </div>
+                            <div class="menu-item-header">
+                                <h3>Beef Tenderloin</h3>
+                                <span class="price">$34</span>
+                            </div>
+                            <p>8oz tenderloin with red wine reduction</p>
+                            <span class="badge">Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="desserts">
+                <h2 class="section-title">Desserts</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/menu-6.jpg" alt="Crème Brûlée" class="img-fluid">
+                            </div>
+                            <div class="menu-item-header">
+                                <h3>Crème Brûlée</h3>
+                                <span class="price">$10</span>
+                            </div>
+                            <p>Classic French vanilla custard with caramelized sugar</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/menu-7.jpg" alt="Chocolate Fondant" class="img-fluid">
+                            </div>
+                            <div class="menu-item-header">
+                                <h3>Chocolate Fondant</h3>
+                                <span class="price">$12</span>
+                            </div>
+                            <p>Warm chocolate cake with vanilla ice cream</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="drinks">
+                <h2 class="section-title">Signature Cocktails</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/menu-8.jpg" alt="Classic Martini" class="img-fluid">
+                            </div>
+                            <div class="menu-item-header">
+                                <h3>Classic Martini</h3>
+                                <span class="price">$14</span>
+                            </div>
+                            <p>Gin or vodka with dry vermouth and olive</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/menu-9.jpg" alt="Smoky Old Fashioned" class="img-fluid">
+                            </div>
+                            <div class="menu-item-header">
+                                <h3>Smoky Old Fashioned</h3>
+                                <span class="price">$16</span>
+                            </div>
+                            <p>Bourbon, bitters, smoke-infused</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <h5>Location</h5>
+                        <p><i class="fas fa-map-marker-alt"></i> KPHB METRO, Unnamed Road, Bhagya Nagar Colony,
+                            Kukatpally<br>Hyderabad, Telangana 500072</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <h5>Hours</h5>
+                        <p><i class="far fa-clock"></i> Monday - Sunday<br>11:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <h5>Follow Us</h5>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/malyala_vijay8/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/vijay-malyala/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://wa.me/+917995158499" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Taste & Toast. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/malyala_vijay8/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/vijay-malyala/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://wa.me/+917995158499" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Preferences Modal -->
+    <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="notificationModalLabel">Notification Preferences</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="notification-settings">
+                        <div class="custom-control custom-switch mb-3">
+                            <input type="checkbox" class="custom-control-input" id="specialOffersNotif">
+                            <label class="custom-control-label" for="specialOffersNotif">Special Offers & Promotions</label>
+                        </div>
+                        <div class="custom-control custom-switch mb-3">
+                            <input type="checkbox" class="custom-control-input" id="orderUpdatesNotif">
+                            <label class="custom-control-label" for="orderUpdatesNotif">Order Updates</label>
+                        </div>
+                        <div class="custom-control custom-switch mb-3">
+                            <input type="checkbox" class="custom-control-input" id="eventNotif">
+                            <label class="custom-control-label" for="eventNotif">Events & Special Programs</label>
+                        </div>
+                        <div class="custom-control custom-switch mb-3">
+                            <input type="checkbox" class="custom-control-input" id="newsletterNotif">
+                            <label class="custom-control-label" for="newsletterNotif">Newsletter</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Preferences</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download App Modal -->
+    <div class="modal fade" id="downloadAppModal" tabindex="-1" aria-labelledby="downloadAppModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="downloadAppModalLabel">Download Our App</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="app-download-content">
+                        <img src="images/qr-code.png" alt="QR Code" class="qr-code mb-3">
+                        <p class="mb-4">Scan the QR code or download directly from:</p>
+                        <div class="app-store-buttons">
+                            <a href="#" class="btn btn-dark mb-2 mr-2">
+                                <i class="fab fa-apple mr-2"></i>App Store
+                            </a>
+                            <a href="#" class="btn btn-dark mb-2">
+                                <i class="fab fa-google-play mr-2"></i>Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
